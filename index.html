@@ -20,6 +20,98 @@
             <button id="startButton">START</button>
         </div>
         <div id="timer">
+        </div>
+        <div id="questions" style="display: none;">
+            <form id = "quiz" name = "quiz">
+                <p>What is the highest summit in Arizona?</p>
+                <input type = "radio" id = "mc" name = question1 value  = "Humphreys Peak"> Humphreys Peak<br>
+                <input type = "radio" id = "mc" name = question1 value = "Agassiz Peak"> Agassiz Peak<br>
+                <input type = "radio" id = "mc" name = question1 value = "Fremont Peak"> Fremont Peak<br>
+                <input type = "radio" id = "mc" name = question1 value = "Mount Baldy"> Mount Baldy<br>
+                <p></p>
+
+                <p>What is the highest summit in California?</p>
+                <input type = "radio" id = "mc" name = question2 value = "Mount Williamson"> Mount Williamson<br>
+                <input type = "radio" id = "mc" name = question2 value  = "Mount Whitney"> Mount Whitney<br>
+                <input type = "radio" id = "mc" name = question2 value = "White Mountain Peak"> White Mountain Peak<br>
+                <input type = "radio" id = "mc" name = question2 value = "North Palisade"> North Palisade<br>
+                <p></p>
+
+                <p>What is the highest summit in Oregon?</p>
+                <input type = "radio" id = "mc" name = question3 value = "North Sister"> North Sister<br>
+                <input type = "radio" id = "mc" name = question3 value = "South Sister"> South Sister<br>
+                <input type = "radio" id = "mc" name = question3 value = "Mount Jefferson"> Mount Jefferson<br>
+                <input type = "radio" id = "mc" name = question3 value  = "Mount Hood"> Mount Hood<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Washington State?</p>
+                <input type = "radio" id = "mc" name = question4 value = "Mount Baker"> Mount Baker<br>
+                <input type = "radio" id = "mc" name = question4 value = "Mount Adams"> Mount Adams<br>
+                <input type = "radio" id = "mc" name = question4 value  = "Mount Rainier"> Mount Rainier<br>
+                <input type = "radio" id = "mc" name = question4 value = "Glacier Peak"> Glacier Peak<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Idaho?</p>
+                <input type = "radio" id = "mc" name = question5 value  = "Borah Peak"> Borah Peak<br>
+                <input type = "radio" id = "mc" name = question5 value = "Leatherman Peak"> Leatherman Peak<br>
+                <input type = "radio" id = "mc" name = question5 value = "Diamond Peak"> Diamond Peak<br>
+                <input type = "radio" id = "mc" name = question5 value = "Hyndman Peak"> Hyndman Peak<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Utah?</p>
+                <input type = "radio" id = "mc" name = question6 value = "Delano Peak"> Delano Peak<br>
+                <input type = "radio" id = "mc" name = question6 value = "Mount Waas"> Mount Waas<br>
+                <input type = "radio" id = "mc" name = question6 value = "Mount Peale"> Mount Peale<br>
+                <input type = "radio" id = "mc" name = question6 value  = "Kings Peak"> Kings Peak<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Colorado?</p>
+                <input type = "radio" id = "mc" name = question7 value  = "Mount Elbert"> Mount Elbert<br>
+                <input type = "radio" id = "mc" name = question7 value = "Mount Massive"> Mount Massive<br>
+                <input type = "radio" id = "mc" name = question7 value = "Mount Harvard"> Mount Harvard<br>
+                <input type = "radio" id = "mc" name = question7 value = "Blanca Peak"> Blanca Peak<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Nevada?</p>
+                <input type = "radio" id = "mc" name = question8 value  = "Boundary Peak"> Boundary Peak<br>
+                <input type = "radio" id = "mc" name = question8 value = "Wheeler Peak"> Wheeler Peak<br>
+                <input type = "radio" id = "mc" name = question8 value = "Mount Moriah"> Mount Moriah<br>
+                <input type = "radio" id = "mc" name = question8 value = "Mount Jefferson"> Mount Jefferson<br>
+                <p></p>
+
+
+                <p>What is the highest summit in New Mexico?</p>
+                <input type = "radio" id = "mc" name = question9 value = "Venado Peak"> Venado Peak<br>
+                <input type = "radio" id = "mc" name = question9 value = "Truchas Peak"> Truchas Peak<br>
+                <input type = "radio" id = "mc" name = question9 value  = "Wheeler Peak"> Wheeler Peak<br>
+                <input type = "radio" id = "mc" name = question9 value = "Gold Hill"> Gold Hill<br>
+                <p></p>
+
+
+                <p>What is the highest summit in Montana?</p>
+                <input type = "radio" id = "mc" name = question10 value  = "Granite Peak"> Granite Peak<br>
+                <input type = "radio" id = "mc" name = question10 value = "Castle Mountain"> Castle Mountain<br>
+                <input type = "radio" id = "mc" name = question10 value = "Mount Wood"> Mount Wood<br>
+                <input type = "radio" id = "mc" name = question10 value = "Tumble Mountain"> Tumble Mountain<br>
+                <p></p>
+
+                <input id = "button" type = "button" value = "Done with this quiz!" onclick = "check();">
+
+
+            </form>
+
+            <div id = "afterDone">
+
+                <p id= "numberCorrect"> You finished! </p>
+
+            </div>
+
+
 
         </div>
 
@@ -32,10 +124,12 @@
 Display: start button and title !!
 user clicks next and the start button disappears !!
 - Hide start button !!
-- Show timer
-    - tic
-- Start the timer 
-- Show questions with multiple choices
+- Show timer !!
+- Start the timer !!
+- Show questions with multiple choices 
+    - radio buttons
+    - store answers into an array
+    - push 
 - As user clicks answers, collect data through event click
 2. Question State
 user has choice to submit with a DONE button
